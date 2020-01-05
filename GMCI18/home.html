@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Tutor System</title>
+	<link rel="stylesheet" href="css/title.css">
+	<style>
+	#Info{font-size: 40px;}
+	#Detail{font-size:28px; font-family: "Open Sans", sans-serif; padding-top: 5px; position: absolute; left: 50px;}
+	.three{height: 172px;margin-top: 0px; width: 172px;  border: 5px solid rgb(255, 255, 255); background-repeat:no-repeat; border-radius: 4px; box-shadow: 0 4px 0 #9cb8d8, 0 3px 20px rgba(0,0,0,0.3); cursor: pointer;}
+	#CreatEvent{background: url(img/CreatEvent.png);}
+	#YourEvent{background: url(img/YourEvent.png);}
+	#TimeTable{background: url(img/TimeTable.png);}
+	.three:active{box-shadow: 0 0 10px rgba(42, 148, 104, 0) inset; position: relative; top: 3px}
+	</style>
+</head>
+<body>
+	<div style="height: 200px;">
+		<div style="height: 130px; text-align: center;">
+			<img src="img/Logo.png" style="display: inline-block; height: 80px; width:750px; padding-top: 30px;"/>
+		</div>
+		<div style="text-align: center; position: relative; z-index: 1;">
+			<ul class="nav">
+				<li><a href="Home.html">Homepage</a></li>
+        <li id="events.html"><a href="">Events</a>
+          <ul class="subnav">
+            <li><a href="createvent.html">CreatEvent</a></li>
+            <li><a href="yourevent.html">YourEvent</a></li>
+            <li><a href="timetable.html">TimeTable</a></li>
+					</ul>
+				</li>
+				<li><a href="forum.html">Forum</a></li>
+				<li><a href="commonproblems.html">Common problems</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li id="search">
+					<form action="" method="get">
+						<input type="text" name="search_text" id="search_text" placeholder="Search">
+						<input type="button" name="search_button" id="search_button" onclick="javascript:window.open('search.html')"/>
+					</form>
+				</ul>
+			</div>
+		</div>
+		<div style="width: 1000px; padding-top: 20px; margin:0 auto;">
+			<div style="height: 500px; width:700px; float: left; position: relative; text-align: center; z-index: 0;">
+				<h1 id="Info"></br></br>Blackbord</h1>
+				<p id="Detail">
+				</br></br></br></br></br>Events: </br></br></br>
+
+					Python: 12/12/2019 11:00 Tutorname: Marco
+				</br></br></br>
+			
+					C: 13/12/2019 15:00 Tutorname: Nora
+				</br></br></br>
+
+					C++: 12/12/2019 19:00 Tutorname: Jonas
+				</br></br></br>
+				</p>
+				
+			</div>
+			<div style="width:300px; float: left; text-align: center; padding-top: 0px;">
+				<input type="button" class="three" id="CreatEvent" onclick="javascript:window.open('createvent.html')"/>
+				<input type="button" class="three" id="YourEvent" onclick="javascript:window.open('yourevent.html')"/>
+				<input type="button" class="three" id="TimeTable" onclick="javascript:window.open('timetable.html')"/>
+			</div>
+		</div>
+	</body>
+	</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Online Tutor System</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/modernizr.js"></script>
+  <style>
+  </style>
+</head>
+<body>
+  <div style="height: 200px;">
+    <div style="height: 130px; text-align: center;">
+      <img src="img/Logo.png" style="display: inline-block; height: 80px; width:750px; padding-top: 30px;"/>
+    </div>
+    <div style="text-align: center; position: relative; z-index: 1;">
+      <ul class="nav">
+        <li><a href="Home.html">Homepage</a></li>
+        <li id="events.html"><a href="">Events</a>
+          <ul class="subnav">
+            <li><a href="createvent.html">CreatEvent</a></li>
+            <li><a href="yourevent.html">YourEvent</a></li>
+            <li><a href="timetable.html">TimeTable</a></li>
+          </ul>
+        </li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="commonproblems.html">Common problems</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li id="search">
+          <form action="" method="get">
+            <input type="text" name="search_text" id="search_text" placeholder="Search">
+            <input type="button" name="search_button" id="search_button"  onclick="javascript:window.open('search.html')"/>
+          </form>
+        </ul>
+      </div>
+    </div>
+    <div id="faq">
+      <section class="cd-faq" style="position: relative; z-index: 0;">
+       <ul class="cd-faq-categories">
+        <li><a class="selected" href="#Search">Python</a></li>
+        <li><a href="#Upload">C</a></li>
+        <li><a href="#Share">C++</a></li>
+
+      </ul>
+
+      <div class="cd-faq-items">
+        <ul id="Search" class="cd-faq-group">
+         <li class="cd-faq-title"><h2>Python</h2></li>
+         <li>
+          <a class="cd-faq-trigger" href="#0">How do I install python and set environment variables?</a>
+          <div class="cd-faq-content">
+           <p>Regarding this issue we recommend the following website with tutorior: <bp></bp>https://www.tutorialspoint.com/python/python_environment.htm</p>
+         </div>
+       </li>
+
+       <li>
+        <a class="cd-faq-trigger" href="#0">How do I read (or write) binary data?</a>
+        <div class="cd-faq-content">
+         <p>To read or write complex binary data formats, it's best to use the struct module. It allows you to take a string containing binary data (usually numbers) and convert it to Python objects; and vice versa.</p>
+       </div>
+     </li>
+
+     <li>
+      <a class="cd-faq-trigger" href="#0">How do I make a Python script executable on Unix?</a>
+      <div class="cd-faq-content">
+       <p>You need to do two things: the script file's mode must be executable and the first line must begin with #! followed by the path of the Python interpreter.</p>
+
+        <p>The first is done by executing chmod +x scriptfile or perhaps chmod 755 scriptfile.</p>
+     </div>
+   </li>
+
+   <li>
+    <a class="cd-faq-trigger" href="#0">How do I get a single keypress at a time?</a>
+    <div class="cd-faq-content">
+     <p>For Unix variants there are several solutions. It's straightforward to do this using curses, but curses is a fairly large module to learn.</p>
+   </div>
+ </li>
+</ul>
+
+<ul id="Upload" class="cd-faq-group">
+ <li class="cd-faq-title"><h2>C</h2></li>
+ <li>
+  <a class="cd-faq-trigger" href="#0">What is the difference between * and &?</a>
+  <div class="cd-faq-content">
+   <p>It will be easier to understand it with an example, you can find something useful in this website:</p><p>//stackoverflow.com/questions/28778625/whats-the-difference-between-and-in-c/28778711</p>
+ </div>
+</li>
+
+<li>
+  <a class="cd-faq-trigger" href="#0">What is the different between character constants instead of string literals</a>
+  <div class="cd-faq-content">
+   <p>In C, character constants and string literals are different things.</p>
+   <p>A character surrounded by single quotes like 'a' is a character constant. A character constant is an integer whose value is the character code that stands for the character. How to interpret character constants with multiple characters like 'abc' is implementation-defined.</p>
+    <p>Zero or more characters surrounded by double quotes like "abc" is a string literal. A string literal is an unmodifiable array whose elements are type char. The string in the double quotes plus terminating null-character are the contents, so "abc" has 4 elements ({'a', 'b', 'c', '\0'})</p>
+ </div>
+</li>
+</ul>
+
+<ul id="Share" class="cd-faq-group">
+ <li class="cd-faq-title"><h2>C++</h2></li>
+ <li>
+  <a class="cd-faq-trigger" href="#0">What is the difference between static in C and static in C++?
+  </a>
+  <div class="cd-faq-content">
+   <p>14
+
+    The use of static at the file scope to restrict access to the current translation unit is deprecated in C++, but still acceptable in C.</p>
+ </div>
+</li>
+
+<li>
+  <a class="cd-faq-trigger" href="#0">How do I understand the different types of zero-value comparisons?</a>
+  <div class="cd-faq-content">
+   <p>bool：if(flag)</p>
+
+    <p>int：if(flag == 0)</p>
+    
+    <p>pointers：if(flag == null)</p>
+    
+    <p>float：if((flag >= -0.000001) && (flag <= 0. 000001))</p>
+ </div>
+</li>
+</ul>
+
+</div>
+<a href="#0" class="cd-close-panel">Close</a>
+</section> <!-- cd-faq -->
+</div>
+<p style="font-size: 20px; margin-bottom: 60px; position: absolute; left: 380px;">We will continuously collect various common problems and update them here </p>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/faqmain.js"></script>
+</body>
+</html>
