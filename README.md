@@ -1,1 +1,2 @@
-# u1s1QS-GMCI-G18
+# GMCI-G18
+Group Work
